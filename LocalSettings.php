@@ -332,4 +332,3 @@ $wgRestrictionTypes = array( 'create', 'edit', 'move', 'upload', 'delete', 'prot
 unset( $wgGroupPermissions['staff'] );
 $wgGroupPermissions['staff']['unblockable'] = false;
 $wgShowExceptionDetails = true;
-$wgReadOnly = 'Ramnode rebooting servers';
