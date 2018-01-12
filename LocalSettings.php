@@ -318,7 +318,6 @@ $wgGroupPermissions['oversight']['suppressionlog'] = true;
 $wgGroupPermissions['oversight']['hideuser'] = true;
 $wgGroupPermissions['oversight']['abusefilter-hide-log'] = true;
 $wgGroupPermissions['oversight']['abusefilter-hidden-log'] = true;
-$wgGroupPermissions['oversight']['abusefilter-private'] = true;
 $wgRevokePermissions['exampleuser']['editmyoptions'] = true;
 $wgRevokePermissions['exampleuser']['editmyprivateinfo'] = true;
 $wgAddGroups['sysop'] = array( 'bot', 'editor', 'reviewer', 'autoreview', 'patroller', 'chatmod', 'blockedfromchat' );
