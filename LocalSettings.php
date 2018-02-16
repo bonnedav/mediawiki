@@ -315,6 +315,7 @@ $wgGroupPermissions['sysadmin']['steward'] = true;
 $wgGroupPermissions['oversight']['suppressrevision'] = true;
 $wgGroupPermissions['oversight']['viewsuppressed'] = true;
 $wgGroupPermissions['oversight']['suppressionlog'] = true;
+$wgGroupPermissions['oversight']['deletelogentry'] = true;
 $wgGroupPermissions['oversight']['hideuser'] = true;
 $wgGroupPermissions['oversight']['abusefilter-hide-log'] = true;
 $wgGroupPermissions['oversight']['abusefilter-hidden-log'] = true;
