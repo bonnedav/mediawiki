@@ -165,7 +165,7 @@ $wgUserLevels = array(
 	'General' => 800000,
 	'General of the Army' => 1000000,
 );
-$wgUserStatsPointValues['edit'] = 100; // Points awarded on a mainspace edit
+$wgUserStatsPointValues['edit'] = 100 // Points awarded on a mainspace edit
 $wgUserStatsPointValues['referral_complete'] = 0; // Points awarded for recruiting a new user
 $wgUserStatsPointValues['friend'] = 200; // Points awarded for adding a friend
 $wgUserStatsPointValues['foe'] = 0; // Points awarded for adding a foe
