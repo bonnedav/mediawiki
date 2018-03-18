@@ -37,8 +37,8 @@ $wgAppleTouchIcon = "$wgResourceBasePath/images/favicon.ico";
 ## UPO means: this is also a user preference option
 $wgEnableEmail = true;
 $wgEnableUserEmail = true; # UPO
-$wgEmergencyContact = "testwiki.wiki.staff@gmail.com";
-$wgPasswordSender = "testwiki.wiki.staff@gmail.com";
+$wgEmergencyContact = "noreply@testwiki.wiki";
+$wgPasswordSender = "noreply@testwiki.wiki";
 $wgEnotifUserTalk = false; # UPO
 $wgEnotifWatchlist = false; # UPO
 $wgEmailAuthentication = true;
