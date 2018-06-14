@@ -6,7 +6,7 @@
 	path = skins
 	url = https://github.com/test-wiki/skins
 	branch = master
-[submodule "mediawiki-vendor"]
-	path = mediawiki-vendor
+[submodule "vendor"]
+	path = vendor
 	url = https://github.com/wikimedia/mediawiki-vendor
 	branch = REL1_31
