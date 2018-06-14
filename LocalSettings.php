@@ -140,7 +140,6 @@ require_once "$IP/extensions/Translate/Translate.php";
 # Add more configuration options below.
 // Captcha
 wfLoadExtension('ConfirmEdit/ReCaptchaNoCaptcha' );
-$wgCaptchaClass = 'ReCaptchaNoCaptcha';
 // SocialProfile
 require_once("$IP/extensions/SocialProfile/SocialProfile.php");
 require_once("$IP/extensions/SocialProfile/UserStats/EditCount.php"); // Necessary edit counter
