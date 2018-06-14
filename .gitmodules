@@ -8,5 +8,5 @@
 	branch = master
 [submodule "vendor"]
 	path = vendor
-	url = https://github.com/wikimedia/mediawiki-vendo
+	url = https://github.com/wikimedia/mediawiki-vendor
 	branch = REL1_31
