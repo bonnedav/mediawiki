@@ -115,6 +115,7 @@ wfLoadExtensions( array(
 	'InputBox',
 	'MaintenanceShell',
 	'MassMessage',
+	'MatomoAnalytics',
 	'Nuke',
 	'OAuth',
 	'OATHAuth',
