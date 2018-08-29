@@ -211,6 +211,8 @@ $wgTitleBlacklistSources = array(
     'src'  => 'MediaWiki:Titleblacklist'
   )
 );
+//MatomoAnalytics
+$wgMatomoAnalyticsServerURL = 'https://piwik.testwiki.wiki
 // WikiEditor
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
 $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
