@@ -115,6 +115,7 @@ wfLoadExtensions( array(
 	'InputBox',
 	'MaintenanceShell',
 	'MassMessage',
+	'MatomoAnalytics',
 	'Nuke',
 	'OAuth',
 	'OATHAuth',
@@ -212,7 +213,8 @@ $wgTitleBlacklistSources = array(
   )
 );
 //MatomoAnalytics
-$wgMatomoAnalyticsServerURL = 'https://piwik.testwiki.wiki
+$wgMatomoAnalyticsServerURL = 'https://piwik.testwiki.wiki/';
+$wgMatomoAnalyticsSiteID = 3;
 // WikiEditor
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
 $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
