@@ -215,7 +215,6 @@ $wgTitleBlacklistSources = array(
 //MatomoAnalytics
 $wgMatomoAnalyticsServerURL = 'https://piwik.testwiki.wiki/';
 $wgMatomoAnalyticsSiteID = 3;
-$wgMatomoAnalyticsGlobalID = 'false';
 // WikiEditor
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
 $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
