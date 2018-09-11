@@ -374,6 +374,8 @@ $wgRemoveGroups['bureaucrat'] = array( 'bot', 'sysop', 'bureaucrat' );
 $wgGroupsRemoveFromSelf['sysop'] = array( 'sysop' );
 $wgRestrictionLevels = array( '', 'user', 'bureaucrat', 'sysop', 'autoconfirmed', 'steward' );
 $wgRestrictionTypes = array( 'create', 'edit', 'move', 'upload', 'delete', 'protect' );
+$wgCascadingRestrictionLevels = array( 'bureaucrat', 'sysop', 'steward' );
+$wgSemiprotectedRestrictionLevels = array( 'user', 'autoconfirmed', );
 unset( $wgGroupPermissions['staff'] );
 $wgGroupPermissions['staff']['unblockable'] = false;
 $wgGroupPermissions['staff']['awardsmanage'] = false;
