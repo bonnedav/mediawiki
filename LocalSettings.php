@@ -378,5 +378,6 @@ unset( $wgGroupPermissions['staff'] );
 $wgGroupPermissions['staff']['unblockable'] = false;
 $wgGroupPermissions['staff']['awardsmanage'] = false;
 $wgGroupPermissions['staff']['giftadmin'] = false;
+$wgImplicitGroups[] = 'staff';
 $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
