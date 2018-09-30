@@ -39,8 +39,8 @@ $wgEnableEmail = true;
 $wgEnableUserEmail = true; # UPO
 $wgEmergencyContact = "noreply@testwiki.wiki";
 $wgPasswordSender = "noreply@testwiki.wiki";
-$wgEnotifUserTalk = false; # UPO
-$wgEnotifWatchlist = false; # UPO
+$wgEnotifUserTalk = true; # UPO
+$wgEnotifWatchlist = true; # UPO
 $wgEmailAuthentication = true;
 # MySQL specific settings
 $wgDBprefix = "mw_";
