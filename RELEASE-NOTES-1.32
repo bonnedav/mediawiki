@@ -1,4 +1,40 @@
-== MediaWiki 1.32 ==
+== MediaWiki 1.32.2 ==
+THIS IS NOT A RELEASE YET
+
+=== Changes since MediaWiki 1.32.1 ===
+* (T204423) Backport support for hyphenated DB names in JobQueueGroup.
+* (T216968) Return pageid as int in both list=iwbacklinks and
+  list=langbacklinks.
+* (T215169) Fix for Database::update() with IGNORE option fails on PostgreSQL.
+* (T199474) Fix typo in rebuildrecentchanges.php resulting in rogue flags.
+* (T218608) Fix an issue that prevents Extension:OAuth working when
+  $wgBlockDisablesLogin is true.
+* (T216029) Chrome redirects to Special:BadTitle after editing a section with
+  a non-Latin name on a page with non-Latin characters in title.
+* Unbreak language related maintenance scripts that use StaticArrayWriter.
+* (T219728) Added support for new Japanese era name "Reiwa"
+* (T25227) action=logout now requires to be posted and have a csrf token.
+
+== MediaWiki 1.32.1 ==
+
+=== Changes since MediaWiki 1.32.0 ===
+* (T213577) rdbms: avoid transaction status errors from ping() in rollback().
+* rdbms: Pass required parameter.
+* rdbms: do not treat SAVEPOINT and RELEASE SAVEPOINT as write queries.
+* (T204531) rdbms: reduce LoadBalancer replication log spam.
+* (T213489) Avoid session double-start in Setup.php.
+* (T213717) Correct namespace 'Template' for gom-deva
+* (T198054) Fix login page crash caused by unknown language via ?uselang
+* (T215324) (T210937) list=users mistakenly reports user as missing.
+* (T209483) Add ILBFactory::redefineLocalDomain method. This is intended for
+  use with scripts like addWiki.php to avoid mismatched domain errors.
+* (T208871) The hard-coded Google search form on the database error page was
+  removed.
+* (T204800) Fix Title::getFragmentForURL for bad interwiki prefix
+* (T215566) Fix installer being unable to determine if the database exists
+  during a fresh installation.
+
+== MediaWiki 1.32.0 ==
 
 === Changes since MediaWiki 1.32.0-rc.2 ===
 * (T188327) Fix slow queries in migrateActors.php.
@@ -196,8 +232,10 @@
 === Bug fixes in 1.32 ===
 * SpecialPage::execute() will now only call checkLoginSecurityLevel() if
   getLoginSecurityLevel() returns non-false.
-* (T43720, T46197) Improved page display title handling for category pages
+* (T43720, T46197) Improved page display title handling for category pages.
 * (T65080) Fixed resetting options of some types via API action=options.
+* (T198054) Fixed login crash caused by invalid/unknown language code for
+  the 'uselang' parameter.
 
 === Action API changes in 1.32 ===
 * Added templated parameters.
@@ -300,6 +338,8 @@ because of Phabricator reports.
 * (T198132) Added language support for Manipuri (mni).
 * (T201276) Added language support for Western Armenian (hyw).
 * (T201583) Added language support for Mon (mnw).
+* (T213717) Fixed a translation error on Goan Konkani (gom-deva) translations
+  for NS_TEMPLATE.
 
 === Breaking changes in 1.32 ===
 * $wgRequestTime, deprecated in 1.25, was removed. Use
@@ -690,8 +730,8 @@ because of Phabricator reports.
   recentchanges.rc_cur_time from the PostgreSQL schema.
 
 == Compatibility ==
-MediaWiki 1.32 requires PHP 7.0.0 or later. Although HHVM 3.18.5 or later is
-supported, it is generally advised to use PHP 7.0.0 or later for long term
+MediaWiki 1.32 requires PHP 7.0.13 or later. Although HHVM 3.18.5 or later is
+supported, it is generally advised to use PHP 7.0.13 or later for long term
 support. MediaWiki requires that the mbstring, xml, ctype, json, iconv and
 fileinfo PHP extensions are loaded to work.
 
